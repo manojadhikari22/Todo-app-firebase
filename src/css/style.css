@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.app-title {
+    height: 10%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height: 90%;
+    display: flex;
+}
+.enter-todos-container{
+    flex-basis: 25%;
+    background-color: rgb(198, 217, 234);
+}
+.display-todos-container{
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(153, 153, 240);
+}
+
+.todo-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.todo-form input{
+    height: 2rem;
+    padding: 0 0.25rem;
+}
+
+.task-description-input{
+    resize: none;
+    padding: 0.25rem;
+}
+
+.submit-task-button{
+    height: 2rem;
+    cursor: pointer;
+}
+
+.filter-container{
+    flex-basis: 10%;
+    border: 2px solid rgb(7, 131, 220);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 4rem;
+    gap: 0.5rem;
+}
+
+.filter-element{
+    height: 2rem;
+    width: 10rem;
+    border-radius: 0.25rem;
+}
+
+.todo-items-container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 90%;
+    align-items: center;
+}
+
+.display-todos-header, .todo-row{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    border: 2px solid black;
+}
+
+.display-todos-header span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-number-header, .todo-number{
+    flex-basis: 8%;
+    background-color: blueviolet;
+}
+
+.task-title-header, .todo-title{
+    flex-basis: 20%;
+    background-color: lawngreen;
+}
+
+.task-date-header, .todo-date{
+    flex-basis: 15%;
+    background-color: lightcyan;
+}
+.task-description-header, .todo-description{
+    flex-basis: 45%;
+    background-color: rgb(45, 80, 105);
+}
+.task-delete-header, .todo-delete-container{
+    flex-basis: 12%;
+    background-color: rgb(224, 71, 11);
+}
+
+.delete-button{
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.title-error, .date-error, .description-error{
+    visibility: hidden;
+}
+
+.todos-ul{
+    width: 100%;
+}
+.todo-row span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
